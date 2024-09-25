@@ -7618,10 +7618,18 @@ Blog
 }
 .blogsidebar__content__wraper__2.tab__instructor {
   border: none;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.03);
 }
+.instructor_image{
+  height: 200px;
+    border-radius: 100%;
+    border: 4px solid #8db833;
+
+}
 .blogsidebar__content__wraper__2.tab__instructor .blogsidebar__content__inner__2 {
-  display: flex;
+  /* display: flex; */
   text-align: left;
 }
 @media (max-width: 767px) {
@@ -8585,13 +8593,14 @@ Course
 
 .course__button a {
   height: 26px;
-  width: 114px;
+  /* width: 114px; */
   background: var(--primaryColor);
   color: var(--whiteColor);
   display: inline-block;
   text-align: center;
-  line-height: 23px;
+  line-height: 19px;
   font-weight: 600;
+  padding: 3px;
   font-size: 14px;
   margin-right: 20px;
   border-radius: var(--borderRadius);
@@ -8627,6 +8636,25 @@ Course
   font-size: 36px;
   line-height: 58px;
   color: var(--blackColor);
+}
+.modal-fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: auto;
+            margin: auto;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            overflow: hidden;
+        }
+#enrollModalLabel{
+  color: #8db833 !important;
+}
+#enroll_form label{
+  font-size: 13px;
+    color: #8db833;
 }
 @media (max-width: 767px) {
   .course__details__heading h3 {
@@ -8678,6 +8706,7 @@ Course
 .course__details__paragraph p {
   font-weight: 400;
   font-size: 18px;
+  font-family: Kalpurush;
   line-height: 30px;
 }
 @media (max-width: 767px) {
@@ -8860,6 +8889,7 @@ Course
 .experence__description p {
   font-weight: 400;
   line-height: 30px;
+  font-family: Kalpurush;
   font-size: 18px;
   color: var(--darkdeep4);
   margin-bottom: 20px;
@@ -12172,7 +12202,7 @@ Footer Area
   transition: 0.3s;
 }
 .footerarea__wrapper .footerarea__inner .footerarea__list ul li a:hover {
-  color: var(--primaryColor);
+  /* color: var(--primaryColor); */
 }
 .footerarea__wrapper .footerarea__inner .footerarea__list ul li a:hover::after {
   opacity: 1;
@@ -12189,7 +12219,7 @@ Footer Area
   align-items: center;
 }
 .footerarea__right__wraper .footerarea__right__list ul li a:hover .footerarea__right__content h6 {
-  color: var(--primaryColor);
+  /* color: var(--primaryColor); */
 }
 .footerarea__right__wraper .footerarea__right__list ul li a .footerarea__right__img {
   margin-right: 11px;
